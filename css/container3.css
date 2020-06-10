@@ -1,0 +1,8 @@
+#rocketController{
+    transition: 0.8s;
+}
+
+
+@keyframes capsuleOut{
+    100%{transform: translateY(100%);visibility: hidden;}
+}

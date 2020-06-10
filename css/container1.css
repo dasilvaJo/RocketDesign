@@ -1,0 +1,61 @@
+/*Transition Page1*/
+#rocket,#button{
+    animation: 5s ease rocketEntry;
+}
+
+#button{
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform-origin: 48% 55%;
+}
+
+#button:hover{
+    transform: scale(1.1);
+}
+#button:hover #bgButton{
+    fill: orange;
+}
+
+#rocketText, #designText{
+    animation: 2s ease rocketEntry;
+}
+
+#left1, #left2, #right1, #right2{
+    animation: 2.5s ease rocketEntry;
+}
+#middle1, #middle2{
+    animation: 2.8s ease rocketEntry;
+}
+
+#star, #star2, #star3, #star4, #star5, #star6, #star7, #star8{
+    animation: 4s ease starFlash infinite;
+}
+
+#star9, #star10, #star11, #star12, #star13, #star14, #star15{
+    animation: 2s ease starFlash infinite;
+}
+@keyframes fadeIn{
+    from{opacity:0;visibility: visible;}
+    to{opacity:1}
+}
+
+@keyframes fadeOut{
+    from{opacity:1}
+    to{opacity:0;visibility: hidden;}
+}
+
+@keyframes rocketEntry{
+    from{transform: translateY(100%);}
+    to{transform: translateY(0)}
+}
+
+@keyframes rocketExit{
+    from{transform: translateY(0);}
+    to{transform: translateY(-100%)}
+}
+
+@keyframes starFlash{
+    0%{opacity:1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}

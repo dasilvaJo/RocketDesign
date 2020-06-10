@@ -1,0 +1,33 @@
+/*Transition Page2*/
+#upButton, #middleButton, #bottomButton{
+    transition: 1s;
+    cursor: pointer;
+}
+#upButton:hover, #middleButton:hover, #bottomButton:hover {
+    transform: translateX(3%);
+}
+
+@keyframes rightCorner{
+    from{transform: translateX(100%);}
+    to{transform: translateX(0);}
+}
+
+@keyframes leftCorner{
+    from{transform: translateX(-100%);}
+    to{transform: translateX(0);}
+}
+
+@keyframes rightCorner2{
+    from{transform: translateX(0);}
+    to{transform: translateX(100%);}  
+}
+
+@keyframes leftCorner2{
+    from{transform: translateX(0);}
+    to{transform: translateX(-100%);}
+}
+
+@keyframes menuExit{
+    from{transform: translateX(0);}
+    to{transform: translateX(100%);}
+}
